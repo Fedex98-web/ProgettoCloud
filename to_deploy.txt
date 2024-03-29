@@ -1,0 +1,4 @@
+gcloud config set project gnocchi-test-415019
+gcloud functions deploy save_data_1_bq --region europe-west1 --runtime python310 --trigger-http --allow-unauthenticated
+gcloud functions deploy graph_data --region europe-west1 --runtime python310 --trigger-http --allow-unauthenticated
+gcloud functions deploy detect_anomalies --region europe-west1 --runtime python310 --trigger-http --allow-unauthenticated
